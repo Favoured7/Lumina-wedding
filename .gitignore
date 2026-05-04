@@ -1,0 +1,14 @@
+# All npm/yarn installs (root has deps too - e.g. concurrently, rxjs)
+node_modules/
+**/node_modules/
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+*.sqlite
+*.log
+.env
+backend/.env
+frontend/.env
+
+# Mercurial (never commit)
+.hg

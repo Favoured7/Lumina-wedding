@@ -1,0 +1,5 @@
+npm init -y
+
+npm install express sequelize mysql2 dotenv
+
+save: [package.json -> script] dev: node --watch src/server.js

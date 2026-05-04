@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lumina-weddings
+    runtime: node
+    buildCommand: npm install --prefix backend && npm install --prefix frontend && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health

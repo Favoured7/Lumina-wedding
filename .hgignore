@@ -1,0 +1,23 @@
+# Lumina Weddings - files Mercurial should NOT track (see each section below).
+syntax: glob
+
+# Version control folder (if present inside the tree)
+.git/
+
+# npm dependencies (recreated with: npm install)
+node_modules/**
+backend/node_modules/**
+frontend/node_modules/**
+
+# Vite build output (recreated with: npm run build, in frontend/)
+frontend/dist/**
+
+# Local database and junk files
+*.sqlite
+*.log
+*.tmp
+
+# Environment secrets (keep .env.example)
+.env
+backend/.env
+frontend/.env
